@@ -3,63 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <title>John's Portfolio</title>
-  <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+  <!--<link href="assets/css/reset.css" type="text/css" rel="stylesheet">-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer.css" rel="stylesheet">
   <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">John Johansen</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>  
-  </header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">John Johansen</a>
+      </div>
+      <ul class="nav navbar-nav"> 
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul> 
+    </div>
+  </nav>
 
   <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
-    </section>
- 
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with me</h2>
-        
-        <a href="https://github.com/johnTjohansen">
-          <img src="assets/images/github_square.png" height="50px" alt="Github"></a>
-        <a href="https://www.linkedin.com/in/john-johansen-b7087a2">
-          <img src="assets/images/linkedin_square_color.png" height="50px" alt="LinkedIn"></a>
-        <a href="http://stackoverflow.com/users/7387004/john?tab=profile">
-          <img src="assets/images/overflow.png" height="50px" alt="StackOverflow"></a>
-      </div>    
-    </section>  
+    <div class="row">
+      <div class="col-sm-12 col-md-7">
+        <section id="main-section">
+          <h1>Contact</h1>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="John Smith">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required="required">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" name="message" required="required" rows="5"></textarea>
+            </div>
+            <input class="btn btn-default" type="submit" value="Submit">
+          </form>
+        </section>
+      </div>
+      <div class="col-sm-12 col-md-3 col-md-offset-2">  
+        <section class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Connect with me</h3>
+          </div>
+          <div class="panel-body">
+            <a href="https://github.com/johnTjohansen">
+              <img src="assets/images/github_square.png" class="social" alt="Github" /></a>
+            <a href="https://www.linkedin.com/in/john-johansen-b7087a2">
+              <img src="assets/images/linkedin_square_color.png" class="social" alt="LinkedIn" /></a>
+            <a href="http://stackoverflow.com/users/7387004/john?tab=profile">
+              <img src="assets/images/overflow.png" class="social" alt="Stack Overflow" /></a>
+          </div>  
+        </section>
+      </div>
+    </div>  
   </div>
 
   <footer>
-    <div class="container">
+    <div class="row">
       &copy;Copyright 2017 John Johansen
     </div>  
   </footer>
