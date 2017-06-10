@@ -20,7 +20,7 @@ h1, h3 {
   color: #4286f4;
 }
 
-h2 {
+h2, h4 {
   color: #fff;
 }
 
@@ -65,7 +65,7 @@ p {
 
 }
 
-.navbar-default .navbar-nav>li>a:hover { color: #4aaaa5; }
+.navbar-default .navbar-nav>li>a:hover { color: #4286f4; }
 
 /*--------NAV END----------*/
 
@@ -86,12 +86,11 @@ section {
 }
 
 #main-section {
-	margin: 20px 0 0 0;
-	padding: 10px;
+	margin: 80px 0 0 0;
 }
 
 .navbar-brand {
-	background-color: #4aaaa5;
+	background-color: #4286f4;
 	color: #fff !important;
 }
 
@@ -103,10 +102,18 @@ section {
 
 .caption {
     position: absolute;
-    top: 45%;
+    top: 75%;
     left: 0;
     width: 100%;
-    background-color: #4aaaa5;
+    background-color: #4286f4;
+}
+
+.connect {
+    margin: 80px 0 0 0;
+}
+
+#contact-form {
+    margin: 15px;
 }
 
 <!-- Sticky footer -->

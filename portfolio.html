@@ -6,28 +6,32 @@
   <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Custom styles for this template -->
   <link href="sticky-footer.css" rel="stylesheet">
   <link href="assets/css/style.css" type="text/css" rel="stylesheet">
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-
+  
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">John Johansen</a>
-      </div>
-      <ul class="nav navbar-nav"> 
-        <li><a href="index.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul> 
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid navbar-custom">
+      <div class="row">
+        <div class="navbar-header">
+          <div class="col-xs-12 phone-nav">
+            <a class="navbar-brand" href="#" id="logo">John Johansen</a>
+          </div> 
+        </div>
+        <div class="nav navbar-nav navbar-left">
+          <ul> 
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>     
     </div>
   </nav>
 
@@ -39,9 +43,9 @@
           <div class="col-sm-6">
             <div class="thumbnail text-center">
               <a href="https://johntjohansen.github.io/Hangman-Game/"> 
-                <img alt="Hangman" class="img-responsive" src="assets/images/hungman.jpg">
+                <img alt="Hangman" class="img-responsive" src="assets/images/win.jpg">
                 <div class="caption">
-                  <h2>Hangman</h2>
+                  <h4>Hangman game</h4>
                 </div>
               </a>  
             </div>
@@ -50,7 +54,7 @@
             <div class="thumbnail text-center">
               <img alt="RPG Game" class="img-responsive" src="assets/images/RPGgame.jpg">
             <div class="caption">
-              <h2>RPG Game</h2>
+              <h4>RPG Game</h4>
             </div>
           </div>
         </div>    
@@ -60,7 +64,7 @@
           <div class="col-sm-12 thumbnail text-center">
             <img alt="Trivia Game" class="img-responsive" src="assets/images/Trivia.jpg">
             <div class="caption">
-              <h2>Trivia Game</h2>
+              <h4>Trivia Game</h4>
             </div>
           </div>
         </div>
@@ -68,7 +72,7 @@
           <div class="col-sm-12 thumbnail text-center">
             <img alt="Rutgers Info Widget" class="img-responsive" src="assets/images/Widget.jpg">
             <div class="caption">
-              <h2>Rutgers Info Widget</h2>
+              <h4>Rutgers Info Widget</h4>
             </div>
           </div>
         </div> 
@@ -78,14 +82,14 @@
           <div class="col-sm-12 thumbnail text-center">
             <img alt="Rock Paper Scissors" class="img-responsive" src="assets/images/Rock.jpg">
             <div class="caption">
-              <h2>Rock Paper Scissors</h2>
+              <h4>Rock Paper Scissors</h4>
             </div>
           </div>
         </div>      
       </div>
     </section> 
 
-    <div class="col-sm-12 col-md-3 col-md-offset-2">
+    <div class="col-sm-6 col-md-3 col-md-offset-2">
       <section class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">Connect with me</h3>
